@@ -501,7 +501,7 @@ You can see the <a href="http://editor.swagger.io/#/?import=https://raw.githubus
 </tr>
 <tr>
 <td><code class="prettyprint">source</code></td>
-<td><em>string</em>. grouping structure for a short, human-readable description (in <code class="prettyprint">source.name</code>) of the source of the information displayed on this card, with an optional link (in <code class="prettyprint">source.url</code>) where the user can learn more about the organization or data set that provided the information on this card. Note that <code class="prettyprint">source.url</code> should not be used to supply a context-specific &ldquo;drill-down&rdquo; view of the information on this card. For that, use <code class="prettyprint">link.url</code> instead.</td>
+<td><em>string</em>. grouping structure for the <strong>Source</strong> of the information displayed on this card.</td>
 </tr>
 <tr>
 <td><nobr><code class="prettyprint">suggestions</code></nobr></td>
@@ -510,6 +510,24 @@ You can see the <a href="http://editor.swagger.io/#/?import=https://raw.githubus
 <tr>
 <td><code class="prettyprint">links</code></td>
 <td><em>array</em> of <strong>Links</strong>, which allow a service to suggest a link to an app that the user might want to run for additional information or to help guide a decision.</td>
+</tr>
+</tbody></table>
+
+<p>The <strong>Source</strong> is described by the following attributes.</p>
+
+<table><thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><nobr><code class="prettyprint">label</code></nobr></td>
+<td><em>string</em>. A short, human-readable label to display for the source of the information displayed on this card. If a <code class="prettyprint">url</code> is also specified, this may be the text for the hyperlink.</td>
+</tr>
+<tr>
+<td><code class="prettyprint">url</code></td>
+<td><em>URL</em>. An optional URL to load (via <code class="prettyprint">GET</code>, in a browser context) when a user clicks on this link to learn more about the organization or data set that provided the information on this card. Note that this URL should not be used to supply a context-specific &ldquo;drill-down&rdquo; view of the information on this card. For that, use <code class="prettyprint">link.url</code> instead.</td>
 </tr>
 </tbody></table>
 
@@ -539,7 +557,7 @@ You can see the <a href="http://editor.swagger.io/#/?import=https://raw.githubus
 </tr>
 </tbody></table>
 
-<p>Each <strong>Link</strong> described by the following attributes.</p>
+<p>Each <strong>Link</strong> is described by the following attributes.</p>
 
 <table><thead>
 <tr>
